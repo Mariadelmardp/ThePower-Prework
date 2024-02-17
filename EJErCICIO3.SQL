@@ -24,3 +24,6 @@ nombres de los productos que han comprado (utiliza un INNER JOIN con la
 tabla "Productos").*/
 ALTER TABLE public.usuarios
 ADD CONSTRAINT FK_usuarios_name FOREIGN KEY (id) REFERENCES productos(id)
+/*SELECT usuarios.name AS nombre_usuario, productos.name AS nombre_producto
+FROM public.usuarios
+INNER JOIN public.productos ON usuarios.id = productos.usuario_id;*/
